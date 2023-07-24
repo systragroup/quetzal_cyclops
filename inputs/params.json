@@ -1,0 +1,278 @@
+﻿[{
+	"category": "constant",
+	"params": [{
+			"text": "incline weight",
+			"value": 1,
+			"type": "Number",
+			"units": "relative",
+			"hint": "how much slope is important",
+			"rules": ["required", "nonNegative"],
+			"name": "cst_incline"
+		}
+		
+	]
+}, {
+	"category": "road_weight",
+	"params": [{
+			"text": "motorway road weight",
+			"value": 0,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "motorway"
+		},
+		{
+			"text": "motorway_link road weight",
+			"value": 0,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "motorway_link"
+		},
+		{
+			"text": "trunk road weight",
+			"value": 0.2,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "trunk"
+		},
+		{
+			"text": "trunk_link road weight",
+			"value": 0.2,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "trunk_link"
+		},
+		{
+			"text": "primary road weight",
+			"value": 0.3,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "primary"
+		},
+		{
+			"text": "primary_link road weight",
+			"value": 0.3,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "primary_link"
+		},
+		{
+			"text": "secondary road weight",
+			"value": 0.3,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "secondary"
+		},
+		{
+			"text": "secondary_link road weight",
+			"value": 0.3,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "secondary_link"
+		},
+		{
+			"text": "tertiary road weight",
+			"value": 0.3,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "tertiary"
+		},
+		{
+			"text": "tertiary_link road weight",
+			"value": 0.3,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "tertiary_link"
+		},
+		{
+			"text": "residential road weight",
+			"value": 0.8,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "residential"
+		},
+		{
+			"text": "service road weight",
+			"value": 0.7,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "service"
+		},
+		{
+			"text": "unclassified road weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "unclassified"
+		},
+		{
+			"text": "cycleway road weight",
+			"value": 1,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "cycleway"
+		}
+	
+	]
+},
+{
+	"category": "shared_cycleway_weight",
+	"params": [{
+			"text": "motorway shared weight",
+			"value": 0,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "motorway"
+		},
+		{
+			"text": "motorway_link shared weight",
+			"value": 0,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "motorway_link"
+		},
+		{
+			"text": "trunk shared weight",
+			"value": 0.4,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "trunk"
+		},
+		{
+			"text": "trunk_link shared weight",
+			"value": 0.4,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "trunk_link"
+		},
+		{
+			"text": "primary shared weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "primary"
+		},
+		{
+			"text": "primary_link shared weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "primary_link"
+		},
+		{
+			"text": "secondary shared weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "secondary"
+		},
+		{
+			"text": "secondary_link shared weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "secondary_link"
+		},
+		{
+			"text": "tertiary shared weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "tertiary"
+		},
+		{
+			"text": "tertiary_link shared weight",
+			"value": 0.5,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "tertiary_link"
+		},
+		{
+			"text": "residential shared weight",
+			"value": 0.9,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "residential"
+		},
+		{
+			"text": "service shared weight",
+			"value": 0.8,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "service"
+		},
+		{
+			"text": "unclassified shared weight",
+			"value": 0.6,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "unclassified"
+		},
+		{
+			"text": "cycleway shared weight",
+			"value": 1,
+			"type": "Number",
+			"units": "relative",
+			"hint": "weight",
+			"rules": ["required", "nonNegative"],
+			"name": "cycleway"
+		}
+	
+	]
+}
+]
+
+

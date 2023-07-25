@@ -1,4 +1,17 @@
 ﻿[{
+	"category": "aggregation",
+	"params": [{
+			"text": "distance",
+			"value": 1000,
+			"type": "Number",
+			"units": "metres",
+			"hint": "aggregation distance of demand origin and destination",
+			"rules": ["required", "nonNegative"],
+			"name": "distance"
+		}
+		
+	]
+},{
 	"category": "constant",
 	"params": [{
 			"text": "incline weight",

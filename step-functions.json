@@ -1,18 +1,48 @@
 {
-    "StartAt": "Cyclops Model",
+    "StartAt": "Authorization",
     "States": {
+      "Authorization": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::lambda:invoke",
+        "OutputPath": "$.Payload",
+        "Parameters": {
+          "Payload": {
+            "authorization.$": "$.authorization",
+            "model": "quetzal-cyclops-dev",
+            "choice.$": "$.choice",
+            "scenario_path_S3.$": "$.scenario_path_S3",
+            "launcher_arg.$": "$.launcher_arg",
+            "metadata.$": "$.metadata"
+          },
+          "FunctionName": "arn:aws:lambda:ca-central-1:142023388927:function:quetzal-api-auth:$LATEST"
+        },
+        "Retry": [
+          {
+            "ErrorEquals": [
+              "Lambda.ServiceException",
+              "Lambda.AWSLambdaException",
+              "Lambda.SdkClientException",
+              "Lambda.TooManyRequestsException"
+            ],
+            "IntervalSeconds": 3,
+            "MaxAttempts": 2,
+            "BackoffRate": 2
+          }
+        ],
+        "Next": "Cyclops Model"
+      },
       "Cyclops Model": {
         "Type": "Task",
         "Resource": "arn:aws:states:::lambda:invoke",
         "OutputPath": "$.Payload",
         "Parameters": {
           "Payload": {
-            "notebook_path": "notebooks/2_model/cyclops_model.ipynb",
+            "notebook_path": "notebooks/2_model/cyclops_model_extended.ipynb",
             "scenario_path_S3.$": "$.scenario_path_S3",
             "launcher_arg.$": "$.launcher_arg",
             "metadata.$": "$.metadata"
           },
-          "FunctionName": "arn:aws:lambda:ca-central-1:142023388927:function:quetzal-cyclops:$LATEST"
+          "FunctionName": "arn:aws:lambda:ca-central-1:142023388927:function:quetzal-cyclops-dev:$LATEST"
         },
         "Retry": [
           {
@@ -30,5 +60,5 @@
         "End": true
       }
     },
-    "Comment": "Quetzal cyclops model"
+    "Comment": "Quetzal cyclops dev model"
   }

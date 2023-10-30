@@ -4,6 +4,10 @@
 **/*.ipynb_checkpoints*
 **/*.DS_store*
 quetzal/.git
-quetzal_cyclops/inputs/
-quetzal_cyclops/outputs
+quetzal/.venv
+quetzal/wheels-cp38-win_amd64
+quetzal/docker/infra
+quetzal_cyclops/.git/lfs
+quetzal_cyclops/.git/objects
+quetzal_cyclops/scenarios/*
 

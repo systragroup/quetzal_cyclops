@@ -1,75 +1,41 @@
 {
-    "pt":{
-       
-    },
-    "road":{
-       "oneway":[
-          "0",
-          "1"
-       ],
-       "cycleway":[
-         "Advisory bike lane",
-         "Advisory bike lane (single side)",
-         "Bicyclists dismount",
-         "Bus lane with cycling allowed",
-         "Buffered bike lane (road-side)",
-         "Buffered bike lane (kerb-side)",
-         "Buffered bike lane (both sides)",
-         "Dedicated bike path",
-         "Dedicated oneway bike path",
-         "Future cycleway",
-         "Future link",
-         "No",
-         "Painted bike lane",
-         "Peak hour bike lane",
-         "Pedestrian path/street with cycling allowed",
-         "Possible cycling infrastructure/link",
-         "Protected bike lane",
-         "Shared bike path",
-         "Shared zone",
-         "Sharrow",
-         "Shoulder cyclable"
-       ],
-       "cycleway_reverse":[
-         "Advisory bike lane",
-         "Advisory bike lane (single side)",
-         "Bicyclists dismount",
-         "Bus lane with cycling allowed",
-         "Buffered bike lane (road-side)",
-         "Buffered bike lane (kerb-side)",
-         "Buffered bike lane (both sides)",
-         "Dedicated bike path",
-         "Dedicated oneway bike path",
-         "Future cycleway",
-         "Future link",
-         "No",
-         "Painted bike lane",
-         "Peak hour bike lane",
-         "Pedestrian path/street with cycling allowed",
-         "Possible cycling infrastructure/link",
-         "Protected bike lane",
-         "Shared bike path",
-         "Shared zone",
-         "Sharrow",
-         "Shoulder cyclable"
-       ],
-       "highway":[
-          "motorway",
-          "motorway_link",
-          "trunk",
-          "trunk_link",
-          "primary",
-          "primary_link",
-          "secondary",
-          "secondary_link",
-          "tertiary",
-          "tertiary_link",
-          "residential",
-          "living_street",
-          "service",
-          "unclassified",
-          "cycleway",
-          "pedestrian"
-       ]
+    "pt": {},
+    "road": {
+        "oneway": [
+            "0",
+            "1"
+        ],
+        "selectLink":[
+            "yes",
+            "no"
+        ],
+        "cycleway": [
+            "yes",
+            "no",
+            "shared"
+        ],
+        "cycleway_reverse": [
+            "yes",
+            "no",
+            "shared"
+        ],
+        "highway": [
+            "motorway",
+            "motorway_link",
+            "trunk",
+            "trunk_link",
+            "primary",
+            "primary_link",
+            "secondary",
+            "secondary_link",
+            "tertiary",
+            "tertiary_link",
+            "residential",
+            "living_street",
+            "service",
+            "unclassified",
+            "cycleway",
+            "pedestrian"
+        ]
     }
- }
+}
